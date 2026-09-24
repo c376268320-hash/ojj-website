@@ -7,29 +7,17 @@
   <meta name="theme-color" content="#ffffff">
   <title>哦鲸鲸 OJJ | 代币资料</title>
   <link rel="icon" type="image/png" href="assets/ojj-64.png">
-  <style>
-    :root{color-scheme:light;font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;color:#25292d;background:#fff;line-height:1.7;letter-spacing:0}
-    *{box-sizing:border-box}body{margin:0}a{color:#096963;text-underline-offset:4px}a:hover{color:#04433f}a:focus-visible{outline:3px solid #bb705a;outline-offset:5px}
-    .page{max-width:920px;margin:auto;padding:32px 32px 40px}.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-bottom:24px;border-bottom:1px solid #e3e7e7;font-size:14px;color:#5c6469}.top a{text-decoration:none}
-    .identity{display:grid;grid-template-columns:152px minmax(0,1fr);gap:28px;align-items:center;padding:32px 0 28px}.identity img{display:block;width:152px;height:152px;object-fit:contain}
-    h1{font-size:32px;line-height:1.3;margin:0 0 8px;font-weight:650}h1 span{font-size:21px;font-weight:500;color:#617077;margin-left:10px}
-    .subtitle{margin:0;color:#5c6469;font-size:15px}.lead{margin:12px 0 0;font-size:16px;max-width:590px}
-    .metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin:0;padding:20px 0;border-top:1px solid #e3e7e7;border-bottom:1px solid #e3e7e7;gap:20px}
-    dt{font-size:13px;color:#5c6469}dd{margin:5px 0 0;font-size:20px;font-weight:600;line-height:1.45;font-variant-numeric:tabular-nums}
-    section{padding:25px 0;border-bottom:1px solid #e3e7e7}h2{font-size:18px;line-height:1.5;font-weight:650;margin:0 0 12px}p{margin:0 0 12px}p:last-child{margin-bottom:0}
-    .address{display:block;margin:10px 0 16px;padding:14px 0;font-family:ui-monospace,Consolas,monospace;font-size:15px;line-height:1.7;overflow-wrap:anywhere;user-select:all}
-    .links{display:flex;flex-wrap:wrap;gap:12px 24px;font-size:14px}.facts{margin:0;padding:0 0 0 20px}.facts li{padding:3px 0}.muted{color:#5c6469;font-size:14px}
-    .risk{border-left:3px solid #c4866f;padding-left:18px;margin-top:14px}.contact{overflow-wrap:anywhere}.contact a{font-size:17px}
-    footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-top:24px;color:#687277;font-size:12px}
-    @media(max-width:580px){.page{padding:20px 20px 28px}.top{font-size:12px;padding-bottom:18px}.identity{grid-template-columns:96px minmax(0,1fr);gap:16px;padding:24px 0}.identity img{width:96px;height:96px}h1{font-size:24px}h1 span{display:block;margin:4px 0 0;font-size:17px}.lead{grid-column:1 / -1}.identity .lead{font-size:14px}.subtitle{font-size:13px}.metrics{gap:12px;grid-template-columns:1.4fr .8fr .8fr}dd{font-size:17px}dt{font-size:12px}.address{font-size:13px}.links{gap:10px 18px}section{padding:22px 0}.contact a{font-size:15px}}
-    @media(prefers-reduced-motion:no-preference){a{transition:color .15s ease}}
-  </style>
+  <link rel="stylesheet" href="assets/site.css">
+  <link rel="alternate" hreflang="en" href="token-details.html">
 </head>
 <body>
   <main class="page">
     <header class="top">
       <span>OJJ / 代币资料</span>
-      <a href="#contact">项目联系</a>
+      <nav aria-label="资料导航">
+        <a href="token-details.html" lang="en" hreflang="en">English / Token Details</a>
+        <a href="#contact">项目联系</a>
+      </nav>
     </header>
     <div class="identity">
       <img src="assets/ojj-512.png" alt="哦鲸鲸蓝发女孩头像" width="152" height="152">
@@ -44,11 +32,18 @@
       <div><dt>小数位</dt><dd>18</dd></div>
       <div><dt>网络</dt><dd>BNB 主网</dd></div>
     </dl>
+    <section aria-labelledby="project">
+      <h2 id="project">项目与实际功能</h2>
+      <p>哦鲸鲸（OhJingJing，OJJ）由公开署名为 OJJOJJ 的发起人发布。目前本页介绍的交付物是 BNB Smart Chain 上的固定供应量代币合约及其公开资料。</p>
+      <p>合约支持查询余额、转账和代币额度授权。合约本身没有质押收益、借贷、投票治理、分红或价格保障功能；持有 OJJ 不会通过该合约自动获得这些权益。</p>
+      <p class="muted">本页不是募资或代币销售页面。英文技术资料列出可核验的合约参数、分配与风险，不构成商业计划或投资承诺。</p>
+    </section>
     <section aria-labelledby="contract">
       <h2 id="contract">合约地址</h2>
       <code class="address">0xc4E448011922bf8D5041576E048338b58F9a54Fc</code>
       <div class="links">
         <a href="https://bscscan.com/token/0xc4E448011922bf8D5041576E048338b58F9a54Fc" target="_blank" rel="noopener noreferrer">BscScan 代币记录</a>
+        <a href="https://bscscan.com/address/0xc4E448011922bf8D5041576E048338b58F9a54Fc#code" target="_blank" rel="noopener noreferrer">已验证源码</a>
         <a href="https://bscscan.com/tx/0x935edf580eb292f3fdd97651b072a8be2f52781cfb6a9a2c7f84557f1eded922" target="_blank" rel="noopener noreferrer">部署交易</a>
         <a href="https://sourcify.dev/server/v2/contract/56/0xc4E448011922bf8D5041576E048338b58F9a54Fc" target="_blank" rel="noopener noreferrer">Sourcify 验证记录</a>
       </div>
@@ -56,31 +51,41 @@
     <section aria-labelledby="supply">
       <h2 id="supply">供应与合约</h2>
       <ul class="facts">
-        <li>2026 年 9 月 21 日部署。部署时全部 1 亿枚 OJJ 铸造给指定初始持有人，不代表已分发给公众。</li>
+        <li>2026 年 9 月 21 日 00:46:43 UTC 部署。部署时全部 1 亿枚 OJJ（初始供应量的 100%）铸造给同一个指定地址，不代表已分发给公众。</li>
         <li>合约不可升级，无管理员权限，无额外公开增发、转账税或黑名单功能。</li>
-        <li>Sourcify 已于 2026 年 9 月 21 日验证创建代码与运行代码均为精确匹配。</li>
+        <li>Sourcify 创建代码与运行代码均为精确匹配；2026 年 9 月 22 日已确认 BscScan 显示源码精确匹配。验证记录见上方链接。</li>
       </ul>
-      <p class="muted" style="margin-top:14px">初始持有人</p>
-      <code class="address" style="margin-bottom:0;padding:4px 0">0xe761831449356a67AEE6529b18FA7Df157c8AB6C</code>
+      <p class="muted spaced">部署时的初始持有人，同时为合约创建者</p>
+      <code class="address">0xe761831449356a67AEE6529b18FA7Df157c8AB6C</code>
+      <p class="muted">以上是历史初始分配，不是实时持仓。请在 BscScan 查看最新持有人与转账记录。创建者身份不意味着合约具有管理员权限。</p>
     </section>
     <section aria-labelledby="disclosure">
       <h2 id="disclosure">风险与披露</h2>
       <div class="risk">
         <p>源码匹配不等于安全审计。本项目尚未进行独立安全审计。</p>
         <p>不承诺收益、回购或交易所上市。发行代币不等于具有市场价格、流动性或可兑现价值；参与者应独立判断并承担风险。</p>
+        <p>初始供应量集中于一个地址，存在集中持有与后续出售风险。固定供应量不代表价格稳定，链上转账也可能无法撤回。</p>
       </div>
     </section>
     <section aria-labelledby="contact" class="contact">
-      <h2 id="contact">项目联系</h2>
-      <p>发起人：<strong>OJJOJJ</strong></p>
+      <h2 id="contact">发起人与官方联系方式</h2>
+      <p>发起人及项目联系人：<strong>OJJOJJ</strong>（公开署名）。</p>
+      <p>发起人简介：学生，OhJingJing（OJJ）的独立发起人。这是发起人的第一个公开智能合约和网站实践项目，负责项目合约部署、官网建设和公开资料维护。目前项目没有公开团队或公司背景，也没有进行独立安全审计。</p>
       <p><a href="https://github.com/c376268320-hash" target="_blank" rel="noopener noreferrer">GitHub：c376268320-hash</a></p>
-      <p><a href="mailto:c376268320@gmail.com">c376268320@gmail.com</a></p>
+      <p>官方项目联系邮箱：<a href="mailto:c376268320@gmail.com">c376268320@gmail.com</a></p>
+      <p><a href="https://github.com/c376268320-hash/ojj-website" target="_blank" rel="noopener noreferrer">项目网站公开仓库</a></p>
+      <p class="muted">上述 GitHub 链接用于项目联系与网站源码公开，不代表职业资质、独立审计或第三方身份认证。本页不要求提供钱包私钥、助记词或验证码。</p>
+    </section>
+    <section aria-labelledby="downloads">
+      <h2 id="downloads">项目资料与图标</h2>
       <div class="links">
+        <a href="token-details.html" lang="en">English token details</a>
+        <a href="assets/ojj-32.svg" download="OJJ-logo-32.svg">SVG 图标 · 32px</a>
         <a href="assets/ojj-64.png" download="OJJ-logo-64.png">PNG 图标 · 64px</a>
         <a href="assets/ojj-512.png" download="OJJ-logo-512.png">PNG 图标 · 512px</a>
       </div>
     </section>
-    <footer><span>哦鲸鲸 · OhJingJing · OJJ</span><span>资料更新：2026-09-22</span></footer>
+    <footer><span>哦鲸鲸 · OhJingJing · OJJ</span><span>资料版本：2026-09-23 · 非实时行情</span></footer>
   </main>
 </body>
 </html>
